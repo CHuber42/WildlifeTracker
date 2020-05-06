@@ -14,15 +14,15 @@ namespace Animals
     _Breed = breed;
     _Gender = gender;
     }
-  public string GetName(string speciesName)
+  public string GetName()
   {
     return _SpeciesName;
   }
-  public string GetBreed(string breed)
+  public string GetBreed()
   {
     return _Breed;
   }
-  public string GetGender(string gender)
+  public string GetGender()
   {
     return _Gender;
   }
