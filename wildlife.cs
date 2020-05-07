@@ -8,13 +8,24 @@ namespace Animals
     private string _Gender;
     private string _SpeciesName;
    
-    public Species(string breed, string gender, string speciesName)
+    public Species(string speciesName, string breed, string gender)
     {
+    _SpeciesName = speciesName;
     _Breed = breed;
     _Gender = gender;
-    _SpeciesName = speciesName;
     }
-
+  public string GetName(string speciesName)
+  {
+    return _SpeciesName;
+  }
+  public string GetBreed(string breed)
+  {
+    return _Breed;
+  }
+  public string GetGender(string gender)
+  {
+    return _Gender;
+  }
   }
   
 }
